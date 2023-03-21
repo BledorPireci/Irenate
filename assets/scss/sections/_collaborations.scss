@@ -1,0 +1,23 @@
+.collaborations {
+  padding: 50px 0;
+  .container {
+    .row-collab {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      margin: 0 auto;
+      @media (max-width: 1400px) {
+        justify-content: flex-start;
+      }
+      .partners-img {
+        padding: 15px;
+      }
+
+      @media (max-width: 992px) {
+        display: block;
+        text-align: center;
+      }
+    }
+  }
+}

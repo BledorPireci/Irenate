@@ -1,0 +1,108 @@
+.testimonials {
+  background-color: var(--secondLightGray);
+  .testiomnial-wrapper {
+    overflow: hidden;
+    padding-bottom: 100px;
+  }
+  h2 {
+    font-weight: 500;
+    font-size: 27px;
+    color: var(--blueText-color);
+    padding-top: 50px;
+    @media (max-width: 768px) {
+      text-align: center;
+    }
+  }
+  .cards-wrapper {
+    margin-left: calc(((100% - 1528px) / 2) + 80px);
+    @media (max-width: 1600px) {
+      margin-left: 80px;
+    }
+    @media (max-width: 992px) {
+      margin-left: 50px;
+      margin-right: 20px;
+    }
+    width: auto;
+    overflow: visible;
+
+    .swiper-slide {
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      .testimonial-card {
+        cursor: pointer;
+        background-color: white;
+        padding: 50px 40px;
+        position: relative;
+        border-radius: 10px;
+        box-shadow: 137px 91px 80px -74px rgba(10, 49, 141, 0.25);
+        transition: all 1s ease;
+        h3 {
+          margin: 0;
+          font-weight: 500;
+          font-size: 21px;
+          color: var(--blueText-color);
+          padding-bottom: 15px;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+        p {
+          margin: 0;
+          font-weight: 400;
+          font-size: 15px;
+          color: var(--grayText-color);
+        }
+        h5 {
+          font-weight: 500;
+          font-size: 16px;
+          color: #3cb9e6;
+          margin-bottom: 0;
+        }
+        .text-wrapper {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          max-width: 490px;
+          text-align: left;
+          margin-left: 60px;
+          @media (max-width: 992px) {
+            max-width: 100%;
+            margin-left: 20px;
+          }
+        }
+        .vimeo-circle {
+          background-color: #3cb9e6;
+          border-radius: 100px;
+          width: 120px;
+          height: 120px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          position: absolute;
+          left: 0;
+          top: 50%;
+          transform: translate(-50%, -50%);
+          @media (max-width: 992px) {
+            width: 60px;
+            height: 60px;
+          }
+          img {
+            width: 60%;
+          }
+        }
+      }
+      &.swiper-slide-active {
+        .testimonial-card {
+          box-shadow: 137px 91px 80px -74px rgba(10, 49, 141, 0.25), -121px -70px 119px -70px rgba(247, 170, 0, 0.25);
+        }
+      }
+      &.swiper-slide-prev {
+        .testimonial-card {
+          box-shadow: 137px 91px 80px -74px rgba(10, 49, 141, 0), -121px -70px 119px -70px rgba(247, 170, 0, 0);
+        }
+      }
+    }
+  }
+}

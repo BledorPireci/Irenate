@@ -1,0 +1,114 @@
+.services {
+  h2 {
+    padding-top: 45px;
+    font-weight: 500;
+    font-size: 27px;
+    color: var(--blueText-color);
+    margin: 5% auto;
+    @media (max-width: 768px) {
+      text-align: center;
+      padding-bottom: 40px;
+    }
+  }
+  .services-wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+    @media (max-width: 1200px) {
+      justify-content: left;
+    }
+    @media (max-width: 992px) {
+      justify-content: center;
+    }
+    @media (max-width: 768px) {
+      width: 100%;
+      flex-direction: column;
+      align-items: center;
+      margin: 0 auto;
+    }
+    .img-wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      margin-top: -35px;
+
+      .arrow-img {
+        width: 150px;
+        height: auto;
+        display: block;
+      }
+      .head-set {
+        position: absolute;
+        top: 40px;
+        width: 40px;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+    .grid-cards-text-wrapper {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      padding: 15px 30px 45px 30px;
+      h3 {
+        font-weight: 400;
+        font-size: 27px;
+        color: var(--primary-color);
+        margin: 0 0 15px 0;
+        padding: 0;
+        text-align: center;
+      }
+      .p-wrapper {
+        font-size: 18px;
+        padding: 0;
+        list-style: none;
+        color: var(--grayText-color);
+        li {
+          margin-bottom: 15px;
+          display: flex;
+          &::before {
+            content: url("../images/Icons/check-circle-icon.svg");
+            display: inline-block;
+            margin-top: 2px;
+            margin-right: 10px;
+          }
+        }
+      }
+    }
+
+    & > div {
+      box-shadow: inset 1px 1px 0 rgba(0, 0, 0, 0.03);
+      border-radius: 10px;
+      background-color: var(--firstLightGray);
+      flex: 1 0 calc(25% - 30px);
+      max-width: calc(25% - 30px);
+      &:first-child {
+        border-bottom-left-radius: 60px;
+      }
+      &:last-child {
+        border-bottom-right-radius: 60px;
+      }
+      @media (max-width: 992px) {
+        flex: 1 0 calc(50% - 30px);
+        max-width: 340px;
+        width: 100%;
+        &:first-child {
+          border-bottom-left-radius: 10px;
+        }
+        &:last-child {
+          border-bottom-right-radius: 60px;
+        }
+        &:nth-last-child(2) {
+          border-bottom-left-radius: 60px;
+        }
+      }
+      @media (max-width: 768px) {
+        margin-bottom: 30px;
+        border-radius: 10px !important;
+      }
+    }
+  }
+}

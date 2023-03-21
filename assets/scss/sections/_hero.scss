@@ -1,0 +1,181 @@
+.hero-section {
+  background-color: var(--firstLightGray);
+  width: 100%;
+  border-bottom-right-radius: 150px;
+  position: relative;
+  .banner-side {
+    position: absolute;
+    left: 0;
+    height: 100%;
+    top: 0;
+    max-width: 50%;
+    @media (max-width: 992px) {
+      max-width: 90%;
+      position: relative;
+    }
+    .banner-photo {
+      max-width: 100%;
+      width: auto;
+      height: 100%;
+      object-fit: cover;
+      object-position: right;
+    }
+  }
+  .container {
+    max-width: 1528px;
+    position: relative;
+    z-index: 2;
+    .section-wrapper {
+      display: flex;
+      justify-content: flex-end;
+      padding: 100px 0 130px;
+      @media (max-width: 992px) {
+        flex-direction: column;
+        align-items: center;
+      }
+      @media (max-width: 768px) {
+        padding-bottom:70px;
+      }
+      @media (max-width: 576px){
+        display: flex;
+        align-items: flex-start;
+      }
+      @media (max-width: 412px){
+        padding: 0 15px 100px 15px;
+      }
+      .info-hero {
+        width: calc(50% - 30px);
+        @media (max-width: 1600px) {
+          width: calc(50% - 30px);
+        }
+        @media (max-width: 992px) {
+          display: flex;
+          flex-direction: column;
+          width: 100%;
+        }
+        @media (max-width: 576px){
+          align-items: flex-start;
+          width: calc(100% - 30px);
+        }
+        .info-hero-wrapper {
+          margin-bottom: 80px;
+          h1 {
+            max-width: 570px;
+            word-wrap: break-word;
+            font-size: 42px;
+            line-height: 50px;
+            font-weight: 500;
+            color: var(--blueText-color);
+            @media (max-width: 768px){
+              font-size: 32px;
+              line-height: 42px;
+            }
+          }
+          .p-info-hero {
+            font-size: 21px;
+            font-weight: 400;
+            max-width: 550px;
+            word-wrap: break-word;
+            color: var(--grayText-color);
+            margin-bottom: 60px;
+            @media (max-width: 768px){
+              font-size: 18px;
+            }
+          }
+          a > span > img {
+            padding-right: 5px;
+
+          }
+        }
+        .box-row {
+          display: flex;
+          font-weight: 400;
+          font-size: 25px;
+          text-align: center;
+          line-height: normal;
+          width: 100%;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          gap: 15px;
+          @media (max-width: 1600px) {
+            justify-content: left;
+          }
+          @media (max-width: 1400px) {
+            gap: 30px;
+          }
+          @media (max-width: 576px) {
+            flex-direction: column;
+            padding-top: 15px;
+          }
+          & > div > span > img {
+            padding: 0 10px;
+          }
+
+          .box {
+            flex: 1 1 calc(33.33% - 40px);
+            max-width: calc(33.33% - 40px);
+            box-shadow: 5px 12px 22px rgba(10, 49, 141, 0.05);
+            border-radius: 10px;
+            padding: 16px;
+            text-align: left;
+            min-width: 215px;
+            @media (max-width: 1200px) {
+              flex: 1 1 50%;
+              max-width: 50%;
+            }
+            @media (max-width: 992px) {
+              max-width: 280px;
+            }
+            @media (max-width: 768px) {
+              max-width: 100%;
+            }
+            &.tasks-box {
+              color: var(--primaryWhite);
+              background-color: var(--primary-color);
+
+            }
+
+            &.emails-box {
+              color: var(--primary-color);
+              background-color: var(--primaryWhite);
+            }
+
+            &.clients-box {
+              color: var(--primary-color);
+              background-color: var(--primaryWhite);
+              border-bottom-right-radius: 60px;
+            }
+
+            span {
+              display: inline-flex;
+              align-items: baseline;
+              font-size: 27px;
+              img {
+                width: 45px;
+              }
+            }
+
+            p {
+              font-size: 18px;
+              margin: 0 0 5px 45px;
+              line-height: normal;
+              display: block;
+            }
+
+            .box-row-text-blue {
+              color: var(--lightBlueText-color);
+            }
+
+            .box-row-text-white {
+              color: var(--grayText-color);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+

@@ -1,0 +1,77 @@
+.book-a-consult {
+  display: flex;
+  margin: 5%;
+  @media (max-width: 768px) {
+    margin-top: 10%;
+  }
+  .container{
+  }
+  .book-consult-wrapper {
+    margin: 0;
+    padding: 25px 40px 25px 110px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: var(--firstLightGray);
+    position: relative;
+    box-shadow: inset 1px 1px 0px rgba(0, 0, 0, 0.03);
+    border-radius: 10px;
+    @media (max-width: 1500px) {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 20px;
+    }
+    @media (max-width: 992px) {
+      padding: 30px 30px 50px 30px;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .irenate-small {
+      position: absolute;
+      width: 100px;
+      height: 100px;
+      left: 0;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      @media (max-width: 992px) {
+        top: 0;
+        left: 50%;
+      }
+    }
+    .button-consult{
+      z-index: 8;
+      overflow: hidden;
+      .booking-consultation {
+        display: inline-block;
+      }
+    }
+    .text-consult {
+      @media (max-width: 992px) {
+        text-align: center;
+        padding: 20px 0;
+      }
+      @media (max-width: 768px){
+        padding-top: 40px;
+      }
+      h2 {
+        font-weight: 500;
+        font-size: 27px;
+        line-height: 0;
+        color: var(--blueText-color);
+        @media (max-width: 768px){
+          padding-bottom: 20px;
+
+        }
+      }
+      p {
+        font-weight: 400;
+        font-size: 18px;
+        color: var(--grayText-color);
+        line-height: 27px;
+        word-wrap: break-word;
+      }
+    }
+  }
+}

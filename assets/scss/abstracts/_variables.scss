@@ -1,0 +1,13 @@
+// use css custom properties instead of sass variables
+:root{
+    --primary-color: #031565;
+    --secondary-color: #F7AA00;
+    --firstLightGray : #EEF1F5;
+    --secondLightGray: #F8F8FA;
+    --primaryWhite : #FFFFFF;
+    --formBlue : #052172;
+    --blueText-color: #404068;
+    --grayText-color: #a5a5a5;
+    --lightBlueText-color: #B4DFF4;
+    --white-glow: rgba(255, 255, 255, .3);
+}

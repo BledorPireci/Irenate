@@ -1,0 +1,22 @@
+<svg width="64" height="70" viewBox="0 0 64 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g filter="url(#filter0_di_47_543)">
+<path d="M41 40H38.75C36.6875 41.0312 34.4375 41.5 32 41.5C29.5625 41.5 27.2188 41.0312 25.1562 40H23C16.3438 40 11 45.4375 11 52C11 53.6875 12.3125 55 14 55H50C51.5938 55 53 53.6875 53 52C53 45.4375 47.5625 40 41 40ZM15.5 28C16.25 28 17 27.3438 17 26.5V25C17 16.75 23.6562 10 32 10C40.25 10 47 16.75 47 25V26.5C46.9062 30.7188 43.625 34 39.5 34H36.5C36.5 32.4062 35.0938 31 33.5 31H30.5C28.8125 31 27.5 32.4062 27.5 34C27.5 35.6875 28.8125 37 30.5 37H39.5C45.2188 37 49.9062 32.3125 50 26.5V25C50 15.1562 41.8438 7 32 7C22.0625 7 14 15.1562 14 25V26.5C14 27.3438 14.6562 28 15.5 28ZM30.5 28H33.5C35.6562 28.0938 37.625 29.2188 38.6562 31H39.5C41.9375 31 43.9062 29.0312 44 26.5V25C44 18.4375 38.5625 13 32 13C25.3438 13 20 18.4375 20 25C20 28.8438 21.7812 32.125 24.5 34.375C24.5 34.2812 24.5 34.1875 24.5 34C24.5 30.7188 27.125 28.0938 30.5 28Z" fill="#F7AA00"/>
+</g>
+<defs>
+<filter id="filter0_di_47_543" x="0" y="0" width="64" height="70" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dy="4"/>
+<feGaussianBlur stdDeviation="5.5"/>
+<feComposite in2="hardAlpha" operator="out"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_47_543"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_47_543" result="shape"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dy="2"/>
+<feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+<feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.25 0"/>
+<feBlend mode="normal" in2="shape" result="effect2_innerShadow_47_543"/>
+</filter>
+</defs>
+</svg>

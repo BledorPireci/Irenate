@@ -1,0 +1,14 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+html{
+  scroll-behavior: smooth;
+}
+body{
+  margin: 0;
+  padding: 126px 0 0;
+  box-sizing: border-box;
+  &.overflow-hidden {
+    overflow: hidden;
+  }
+}
